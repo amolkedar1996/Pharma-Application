@@ -4,6 +4,7 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
 import Counter from './components/Counter';
 import Task from './components/Task';
+import Posts from "./components/Posts";
 function App() {
  
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path:"/task",
     element:<Task />
+  },
+  {
+    path:"/posts",
+    element:<Posts />
   }
 ]);
 
